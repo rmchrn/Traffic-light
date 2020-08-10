@@ -15,6 +15,7 @@
 		AA0A326A24E165C1005F6BC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0A326824E165C1005F6BC2 /* LaunchScreen.storyboard */; };
 		AA0A327524E165C2005F6BC2 /* Traffic_lightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A327424E165C2005F6BC2 /* Traffic_lightTests.swift */; };
 		AA0A328024E165C2005F6BC2 /* Traffic_lightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A327F24E165C2005F6BC2 /* Traffic_lightUITests.swift */; };
+		AA0A328E24E16643005F6BC2 /* TrafficLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A328D24E16643005F6BC2 /* TrafficLight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		AA0A327B24E165C2005F6BC2 /* Traffic lightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Traffic lightUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0A327F24E165C2005F6BC2 /* Traffic_lightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Traffic_lightUITests.swift; sourceTree = "<group>"; };
 		AA0A328124E165C2005F6BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA0A328D24E16643005F6BC2 /* TrafficLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				AA0A326624E165C1005F6BC2 /* Assets.xcassets */,
 				AA0A326824E165C1005F6BC2 /* LaunchScreen.storyboard */,
 				AA0A326B24E165C1005F6BC2 /* Info.plist */,
+				AA0A328D24E16643005F6BC2 /* TrafficLight.swift */,
 			);
 			path = "Traffic light";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA0A328E24E16643005F6BC2 /* TrafficLight.swift in Sources */,
 				AA0A326224E165C0005F6BC2 /* ViewController.swift in Sources */,
 				AA0A325E24E165C0005F6BC2 /* AppDelegate.swift in Sources */,
 				AA0A326024E165C0005F6BC2 /* SceneDelegate.swift in Sources */,

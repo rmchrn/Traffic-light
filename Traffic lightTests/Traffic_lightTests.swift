@@ -10,18 +10,40 @@ import XCTest
 @testable import Traffic_light
 
 class Traffic_lightTests: XCTestCase {
-
+    
+    var sut: ViewController?
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        sut = sb.instantiateViewController(withIdentifier: "traffic") as? ViewController
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut = nil
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testRedOn() {
+        let _ = sut?.view
+        sut?.turnOn(type: TrafficLightType.red)
+        XCTAssert(sut!.redControl.state == .turnOn)
+        XCTAssert(sut!.amberControl.state == .turnOff)
+        XCTAssert(sut!.greenControl.state == .turnOff)
+    }
+    
+    func testAmberOn() {
+        let _ = sut?.view
+        sut?.turnOn(type: TrafficLightType.amber)
+        XCTAssert(sut!.redControl.state == .turnOff)
+        XCTAssert(sut!.amberControl.state == .turnOn)
+        XCTAssert(sut!.greenControl.state == .turnOff)
+    }
+    
+    func testGreenOn() {
+        let _ = sut?.view
+        sut?.turnOn(type: TrafficLightType.green)
+        XCTAssert(sut!.redControl.state == .turnOff)
+        XCTAssert(sut!.amberControl.state == .turnOff)
+        XCTAssert(sut!.greenControl.state == .turnOn)
     }
 
     func testPerformanceExample() {
