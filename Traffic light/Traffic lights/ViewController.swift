@@ -60,7 +60,7 @@ class ViewController: UIViewController {
      It will turn on one light and turn off the rest
      - parameter aType: Type of light which you want to turn on
      */
-    private func turnOn(type aType: TrafficLightType) {
+    func turnOn(type aType: TrafficLightType) {
         self.redControl.state = .turnOff
         self.amberControl.state = .turnOff
         self.greenControl.state = .turnOff
