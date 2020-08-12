@@ -103,12 +103,10 @@
 			children = (
 				AA0A325D24E165C0005F6BC2 /* AppDelegate.swift */,
 				AA0A325F24E165C0005F6BC2 /* SceneDelegate.swift */,
-				AA0A326124E165C0005F6BC2 /* ViewController.swift */,
-				AA0A326324E165C0005F6BC2 /* Main.storyboard */,
+				AA0A328F24E3D038005F6BC2 /* Traffic lights */,
 				AA0A326624E165C1005F6BC2 /* Assets.xcassets */,
 				AA0A326824E165C1005F6BC2 /* LaunchScreen.storyboard */,
 				AA0A326B24E165C1005F6BC2 /* Info.plist */,
-				AA0A328D24E16643005F6BC2 /* TrafficLight.swift */,
 			);
 			path = "Traffic light";
 			sourceTree = "<group>";
@@ -129,6 +127,24 @@
 				AA0A328124E165C2005F6BC2 /* Info.plist */,
 			);
 			path = "Traffic lightUITests";
+			sourceTree = "<group>";
+		};
+		AA0A328F24E3D038005F6BC2 /* Traffic lights */ = {
+			isa = PBXGroup;
+			children = (
+				AA0A329024E3D049005F6BC2 /* views */,
+				AA0A326124E165C0005F6BC2 /* ViewController.swift */,
+			);
+			path = "Traffic lights";
+			sourceTree = "<group>";
+		};
+		AA0A329024E3D049005F6BC2 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				AA0A326324E165C0005F6BC2 /* Main.storyboard */,
+				AA0A328D24E16643005F6BC2 /* TrafficLight.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
