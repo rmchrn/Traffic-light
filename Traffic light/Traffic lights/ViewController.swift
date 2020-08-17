@@ -38,14 +38,16 @@ class ViewController: UIViewController {
      */
     private func startSignalling() {
         var indicator = 1
-        let totalDuration = Constants.redDuration + Constants.amberDuration + Constants.greenDuration
+        let totalDuration = Constants.redDuration + 2*Constants.amberDuration + Constants.greenDuration
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+            let greenStart = Constants.redDuration + Constants.amberDuration + 1
+            let greenEnd = greenStart - 1 + Constants.greenDuration
             switch indicator {
             case 1...Constants.redDuration:
                 self.turnOn(type: .red)
-            case Constants.redDuration + 1:
+            case Constants.redDuration + 1, greenEnd + 1:
                 self.turnOn(type: .amber)
-            case (Constants.redDuration + Constants.amberDuration + 1)...totalDuration:
+            case greenStart...greenEnd:
                 self.turnOn(type: .green)
             default:
                 break
